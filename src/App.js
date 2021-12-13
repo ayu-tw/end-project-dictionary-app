@@ -16,7 +16,7 @@ export default function App() {
           This project is coded by{" "}
           <a href="https://loving-mcnulty-cc94fa.netlify.app/">An-Yu Huang</a>{" "}
           and is{" "}
-          <a href="https://github.com/ayu-tw/end-project-react-weather">
+          <a href="https://github.com/ayu-tw/end-project-dictionary-app/">
             opened-source.
           </a>
         </footer>
