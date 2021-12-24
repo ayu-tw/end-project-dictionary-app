@@ -1,3 +1,36 @@
 .Dictionary {
   margin: 20px 0;
 }
+
+.Dictionary section {
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 40px;
+}
+
+.Dictionary .search-input {
+  display: block;
+  height: 64px;
+  color: #666;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 22px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.Meaning .defintionPlusExample {
+  line-height: 30px;
+}
+.Meaning .definition,
+.example {
+  font-weight: 200;
+}

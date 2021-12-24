@@ -38,12 +38,13 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <section>
+        <h3>What do you want to look up 💬 ?</h3>
         <form onSubmit={handleSubmit}>
           <input
             type="search"
             autoFocus="on"
             onChange={fetchKeyword}
-            placeholder="search for a word"
+            placeholder="i.e. paris, wine, yoga, coding"
             className="search-input"
           />
         </form>

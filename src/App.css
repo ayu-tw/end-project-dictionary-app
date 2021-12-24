@@ -1,8 +1,16 @@
 .App {
-  text-align: center;
 }
 
+i {
+  font-size: 50px;
+}
 .App-logo {
-  margin: 0 auto;
   max-width: 200px;
+  display: block;
+  margin: 30px auto;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
 }
