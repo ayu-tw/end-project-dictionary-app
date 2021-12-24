@@ -4,19 +4,17 @@ import Result from "./Result";
 import Photos from "./Photos";
 import "./Dictionary.css";
 
-export default function Dictionary() {
+export default function Dictionary(props) {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
 
-  function handleResponse(response) {
-    console.log(response.data[0]);
-    setResults(response.data[0]);
+  function handlePexelsResponse(response) {
+    setPhotos(response.data.photos);
   }
 
-  function handlePexelsResponse(response) {
-    console.log(response.data);
-    setPhotos(response.data.photos);
+  function handleResponse(response) {
+    setResults(response.data[0]);
   }
 
   function handleSubmit(event) {
@@ -35,6 +33,7 @@ export default function Dictionary() {
   function fetchKeyword(event) {
     setKeyword(event.target.value);
   }
+
   return (
     <div className="Dictionary">
       <section>
